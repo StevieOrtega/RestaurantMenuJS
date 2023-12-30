@@ -115,4 +115,97 @@ Js's premiere array methods - map, filter, and reduce wouldnt exist
 here a list of users. were going to do some calculations with their information
 
 
+Map 
+without higher-order functions, we'd always need loops to mimic maps
+functionality
+
+getName = (user) => user.name
+userName = []
+
+for (let i = 0; i < users.length; i++){
+    const name = getName(user[i])
+
+    userNames.push(name)
+}
+
+console.log(userNames)
+
+// we made a function and it returns the name of the user 
+// userName is an empty array 
+
+// the for loop lets us iterate through it and get every name one by one
+// until we reach the end of the users length and. in getName we pass the user array
+// and then we push those names into the userName array while we loop
+
+annd then we console.log the array
+
+
+we could do this instead of all that 
+
+
+let getName = (user) => user.name
+userNames = users.map(getName)
+
+console.log(userNames)
+// we still make the function as we are suppose to but.... 
+// now we use the map function instead so we dont have use a for loop 
+// the map function will use the call the getname function and use that to get the name 
+// and push the names into the userNames array. all in one. 
+// then we  console.log the variable
+
+
+summary
+
+ * strings, numbers, bools, arrays, and objects can be stored as variables
+, arrays, and properties or methods
+
+    * javascript treats functions the same way
+    * this allows for functions that operate on other functions: higer-order
+    * functions
+    * Map, filter, and reduce are prime examples and make common patterns like transforming, searching, 
+    * and summing liss much easier
+    * string, numbers, bool, and array and objects can be strored as bar
+
 */ 
+
+// users = [
+//     {
+//         firstName: "Bonnie",
+//         age: 23
+//     },
+//     {
+//         firstName: "James",
+//         age: 34
+//     },
+//     {
+//         firstName: "bob",
+//         age: 22
+//     },
+//     {
+//         firstName: "Ferxxo",
+//         age: 19
+//     },
+    
+// ]
+
+// let getName = (user) => user.firstName
+
+// let userNames = users.filter(getName)
+
+// console.log(userNames)
+
+
+
+// let startsWithB = (string) => string.toLowerCase().startsWith('b')
+
+// let bNames = users.filter((user) => startsWithB(user.firstName))
+
+// console.log(bNames)
+
+// let totalAge = users.reduce((total, user) => user.age + total, 0)
+
+// console.log(totalAge)
+
+
+
+

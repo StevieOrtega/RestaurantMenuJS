@@ -5,7 +5,78 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Hello World!</h1>
+
+        <!-- div container -->
+        <!--
+            
+            div
+                div
+                <h1>our menu 
+                end of div
+
+                div
+                list of types of food 
+                <all, breakfast, lunch, shakes, dinner> buttons this is all in one div 
+                end of div
+            end of div
+
+
+
+
+
+        -->
+
+
+        <!-- 
+            div items and we are going to use innerHTML to parse in the objects
+                div
+                picture of the plate
+                end div
+
+                div
+                    div
+                    name with price at the end of the end 
+                    end div
+                    div
+                    then we have the text box 
+                    end div
+                end div 
+
+        -->
+
+        <!--  end of div container -->
+
+        <div class="container">
+            <div class="menu-container">
+                <div class="menu-title">
+                    <h1>Our Menu</h1>
+                    <hr class="menu-bline">
+                </div>
+                <div class=" menu-btns">
+                    <button class="menu-btn">All</button>
+                    <button class="menu-btn">Breakfast</button>
+                    <button class="menu-btn">Lunch</button>
+                    <button class="menu-btn">Shakes</button>
+                    <button class="menu-btn">Dinner</button>
+                </div>
+            </div>
+
+            <div id="food-container">
+                <div class="item-contents">
+                    <div id="item-picture">
+                        <img src="" alt="Buttermilk Pancakes">
+                    </div>
+                    <div id="item-box">
+                        <div id="item">
+                            <span id="item-name">something</span>
+                            <span id="item-price">10.99</span>
+                        </div>
+                        <div id="item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptates quia facilis esse rerum. Qui numquam in sapiente, animi rerum aut aspernatur, eum molestias tempora quo dignissimos quia nulla exercitationem.</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </body>
     <script src="app.js"></script>
 </html>

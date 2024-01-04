@@ -4,6 +4,7 @@ function getUser(user) {
     user.name;
 }
 1. arrays
+    
 2. objects
 Breakfast 
     * Picture of the plate

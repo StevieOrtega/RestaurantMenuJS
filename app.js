@@ -197,6 +197,123 @@
 // console.log(totalAge)
 
 
+
+/* 
+Objects and arrays 
+
+Both objects and arrays are considered special in JS. Objects represent 
+a special data ty pe that is mutable and can be used to store a collection 
+of data. Arrays are a special type of variable that is also mutableand can also
+be used to store a list of values. so what exactly is the difference between
+objects and arrays, when do you use which, and how to dowork with each of them
+
+
+
+Objects 
+ when to use objects 
+ Objects are used to represent a "thing" in your code. that could be a person, a car, a building 
+ a book. a character in a game. Bascially anything that is made up or can be defined by a set of characteristics 
+ in Ojbects, these characteristics are called properties that consit of a key and a value. 
+ 
+made up or can be defined by a set of characteristics 
+
+
+// Basic Object Syntax 
+    var object = { 
+        key: value
+    }
+
+//Example 'person' object
+    var person = {
+        name: zac; 
+        age: 33; 
+        likescoding: true; 
+    }
+
+
+    Access, Add, and Remove Items from Objexts
+    Properites in objects can be accessed, added, changed and removed by using either dot or 
+    bracket notation. To get the value of the age key in our person object with both dot and 
+    bracket notation, we'd write: 
+
+    //Dot Notation
+    person.age // returns 33
+
+    // Bracket Notation
+    person['age'] // returns 33  
+
+
+    Say we wanted to change the value of Likescoding to false. We can do that with dot notation like this: 
+    person.likesCoding = false;
+
+    And if we wanted to ADD a new property to our person object, we could accomplish that with 
+    dot notation as well: 
+
+    person.hobbies = ['hiking', 'travel', 'reading'];
+
+    Finally, to remove a property from an object, we use the delete keyword like so: 
+
+    delete person.age; 
+
+    access add and remove
+
+    Iterating Through Objects 
+        The most common way to loop through properties in an object is with a forInloop: 
+    
+    for (var key in myObject){
+        console.log(key); // logs keys in myObject 
+        console.log(myObject[key]); // logs values in myObjects
+    }
+
+    Another way to iterate through object properties is by appending the forEach() method
+    to Objects.keys(); 
+
+    Object.keys(myObject).forEach(function(key)){
+        console.log(key); // logs keys in myObject 
+        console.log(myObjec[key]) // logs values in myObject
+    }
+
+    Arrays
+        When to use Arrays
+        We use arrays whenever we want to create and store a list of mulitple items in 
+        a single variable. Arrays are especially useful when creating ordered collections
+        where items in the collection can be accessed by their numercial
+        postion in the list. Just as the object properties can store values of any primative 
+        data type, so too can arrays consist of strings, number, booleans, objects, or even other 
+        arrays. 
+
+
+
+        Access, Add, and Remove items from Arrays
+            Arrays use zero-based indexing, so the first item in an array has an index of 0, 
+            the second item an index of 1, and so on. For Instance, let's say we wanted to access the third item
+            ('Mexico City) in the following array: 
+
+            var vactionSpots = ['Tokyo', 'Bali', 'Mexico City', 'Vancouver'
+            ]
+
+            To do so, we'd write: 
+
+            vacationSpots[2]; // returns "Mexico City"
+
+            Items can be added and removed from the beginning or end of an array using 
+            the push(), pop(), unshift(), and shift() methods: 
+
+            // push() - Adds Items(s) to the end of an array
+            vactionSpots.push('Miami'); 
+
+            // Pop() - Removes the last item from an array
+            vacationSpots.pop(); 
+
+            // unshift() - Adds item(s) to the beginning of an array
+            vactionSpots.unshift('cape town', 'moscow');
+
+            // shift() - Removes the first item from an array 
+            vactionSpots.shift(); 
+            
+*/ 
+
+
 breakfastItems = [
     {
         name: "Buttermilk Pancakes Platter",
@@ -291,7 +408,5 @@ dinnerItems = [
         text: "Pancakes made soft and fluffy by scratching and with love to give it that home feel taste."
     },
 ]
-
-
 
 

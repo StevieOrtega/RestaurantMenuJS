@@ -1,5 +1,8 @@
 
-breakfastItems = [
+const foodDisplay = document.getElementById('food-container')
+
+
+breakfast = [
     {
         name: "Buttermilk Pancakes Platter",
         price: 10.99,
@@ -25,7 +28,7 @@ breakfastItems = [
     
 ]
 
-lunchItems = [
+lunch = [
     {
         name: "Turkey & Avocado Sandwich",
         price: 10.99,
@@ -71,7 +74,7 @@ shakes = [
     },
 ]
 
-dinnerItems = [
+dinner = [
     {
         name: "T-bone Steak",
         price: 10.99,
@@ -93,5 +96,23 @@ dinnerItems = [
         text: "Pancakes made soft and fluffy by scratching and with love to give it that home feel taste."
     },
 ]
+
+function makeMore(arr23){
+arr23.forEach(item => {
+    foodDisplay.insertAdjacentHTML("beforeend", `<div class="item-contents">
+    <div id="item-picture">
+        <img src="" alt="picture-description">
+    </div>
+    <div id="item-box">
+        <div id="item">
+            <span id="item-name">${item.name}</span>
+            <span id="item-price">${item.price}</span>
+        </div>
+        <div id="item-text">
+        ${item.text}</div></div></div>`) 
+
+})
+}
+arr23(breakfast)
 
 

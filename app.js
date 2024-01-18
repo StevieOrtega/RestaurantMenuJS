@@ -1,5 +1,11 @@
+const allBtn = document.getElementById('all-Btn')
+const breakyBtn = document.getElementById('breakfast-btn')
+const lunchBtn = document.getElementById('lunch-btn')
+const dinnerBtn = document.getElementById('dinner-btn')
+const shakesBtn = document.getElementById('shakes-btn')
 
 const foodDisplay = document.getElementById('food-container')
+
 
 
 breakfast = [
@@ -132,7 +138,33 @@ arr23.forEach(item => {
 
 })
 }
-displayBoxes(breakfast)
-displayBoxes(shakes)
-displayBoxes(lunch)
-displayBoxes(dinner)
+
+
+allBtn.addEventListener('click', showAllMenu =>{
+    foodDisplay.innerHTML = '';
+    displayBoxes(breakfast)
+    displayBoxes(shakes)
+    displayBoxes(lunch)
+    displayBoxes(dinner)
+    
+})
+
+breakyBtn.addEventListener('click', showBreakfast => {
+    foodDisplay.innerHTML = '';
+    displayBoxes(breakfast)
+})
+
+lunchBtn.addEventListener('click', showLunch => {
+    foodDisplay.innerHTML = '';
+    displayBoxes(lunch)
+})
+
+dinnerBtn.addEventListener('click', showDinner => {
+    foodDisplay.innerHTML = '';
+    displayBoxes(dinner)
+})
+
+shakesBtn.addEventListener('click', showShakes => {
+    foodDisplay.innerHTML = '';
+    displayBoxes(shakes)
+})

@@ -33,7 +33,7 @@ Dinner
         use map and filter and reduce to properly implement them into their proper
         locations in the with the tag breakfast o lunch o shakes o dinner 
     
-6. innerHTML
+6. innerHTMLitem-text
     we can append a new list  item to the existing list 
     never use innerHTML for input. 
 
